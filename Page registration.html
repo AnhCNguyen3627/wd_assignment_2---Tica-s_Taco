@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>    
+  <meta charset="utf-8" />    
+  <meta name="description" content="Web development" />    
+  <meta name="keywords" content="Registration Form" />    
+  <meta name="author" content="put your name here" />
+	<link href="style/Page registration.css" rel="stylesheet" type="text/css" />
+	<script src="style/jquery-1.9.1.min.js"></script>
+	<script src="style/validation.js"></script>
+	<title>Tica's Tacos - Registration</title> 
+</head> 
+<body>
+	<header><h1>Tica's tacos</h1>
+	</header>
+	<nav><a href="Page index.html">Home</a> <a href="Page registration.html">Register</a> <a href="Page order.html">Order</a></nav>
+<form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php"> 
+<fieldset> 
+  <legend>Account Information</legend> 
+  <div class="textinput"> 
+    <label for="sid">User ID</label> 
+    <input id="sid" type="text" name="sid" /> 
+  </div> 
+  <div class="textinput"> 
+    <label for="pwd1">Password</label> 
+    <input id="pwd1" type="password" name="pwd1" /> 
+  </div> 
+  <div class="textinput"> 
+    <label for="pwd2">Retype Password</label> 
+    <input id="pwd2" type="password" name="pwd2" /> 
+  </div> 
+</fieldset> 
+<fieldset> 
+  <legend>User Information</legend> 
+    <div class="textinput"> 
+      <label for="uname">Name</label> 
+    <input id="uname" type="text" name="uname" /> 
+    </div> 
+  <div class="radioinput"> 
+    <fieldset> 
+      <legend>Gender</legend> 
+      <input id="genm" type="radio" name="gender" value="M" /> 
+      <label for="genm">Male</label> 
+      <input id="genf" type="radio" name="gender" value="F" /> 
+     <label for="genf">Female</label> 
+    </fieldset>
+  </div>
+	<div class="cboxinput">
+		<fieldset>
+		<legend>Favorite taco(s)</legend><br/>
+	   <input id="taco1" type="checkbox" name="cbGrilledChicken" value="GrChic" />
+		<label for="taco1">Grilled chicken stuffed Quesadilla Taco</label><br/>
+	   <input id="taco2" type="checkbox" name="cbCarneAsada" value="CarAsa" />
+		<label for="taco2">Carne Asada stuffed Quesadilla Taco</label><br/>
+	   <input id="taco3" type="checkbox" name="cbRanchChicken" value="RanChic" />
+		<label for="taco3">Ranch crispy chicken Taco</label>
+		</fieldset>
+	</div>
+</fieldset> 
+<div class="buttoninput">
+	<input type="reset" value="Reset" />
+	<input type="submit" value="Test Register" /> 
+</div>
+</form>
+<footer><p>Tica's tacos, 37 Radford Street, Louisville, KY 40299, 502-221-5908</p></footer>
+</body> 
+</html> 

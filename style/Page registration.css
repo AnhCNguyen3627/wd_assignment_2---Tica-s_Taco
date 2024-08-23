@@ -1,0 +1,23 @@
+header {background-image: url("../images/tacos.jpg"); border-style: solid; border-width: 1px;}
+header h1 {text-align: center; color:white; font-size:300%; padding: 30px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+nav {padding: 5px; margin-bottom: 5px; margin-top: 5px; height:1em; line-height:1em; background-color: yellow; border-width: 1px; border-color: white;}
+a {float:left; width:10em; text-decoration:none; color:white; background-color:green; border-right: 1px solid white;}
+a:hover {background-color: burlywood;}
+form {width:100%; background-image: url("../images/tacos1.webp"); color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; font-size: 150%; padding-top:20px;}
+label {float:left; text-align: right; width:10em; margin-right: 1em;}
+input {width:50%;}
+.textinput {margin:10px;}
+.radioinput fieldset {border:none;}
+.radioinput legend {float: left; text-align: right; width: 9em; margin-right: 1em;}
+.radioinput input {width:2em;}
+.radioinput label {float: none; text-align: left;}
+.buttoninput {text-align: right;}
+.buttoninput input {width:auto;}
+.cboxinput fieldset {border:none;}
+.cboxinput legend {float: left; text-align: right; width: 9em; margin-right: 1em;}
+.cboxinput input {width:2em;}
+.cboxinput label {float: none; text-align: left;}
+fieldset {border-top-style: dashed; border-left:none; border-right:none; border-bottom: none;}
+.window {display: none; z-index: 2; position: fixed; top:50%; left:50%; margin-top: -5em; margin-left:-11em; background-color: lightblue; border-radius: 15px; border:solid 1px blue; box-shadow: 10px 10px 5px #888; padding:5px; width:22em; height:10em;}
+#scrnOverlay {visibility: hidden; z-index: 1; position: fixed; top:0; bottom:0; left:0; right:0; background-color: grey; opacity:0.5;}
+footer {clear:both; border-style:solid; margin-top: 20px; color:black; background-color: yellow; border-width: 1px; padding-left:10px; text-align: center;}

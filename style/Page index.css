@@ -1,0 +1,17 @@
+header {background-image: url("../images/tacos.jpg"); border-style: solid; border-width: 1px;}
+header h1 {text-align: center; color:white; font-size:300%; padding: 30px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+nav {padding: 5px; margin-bottom: 5px; margin-top: 5px; height:1em; line-height:1em; background-color: yellow; border-width: 1px; border-color: white;}
+a {float:left; width:10em; text-decoration:none; color:white; background-color:green; border-right: 1px solid white;}
+a:hover {background-color: burlywood;}
+#info {padding: 10px; background-image: url("../images/tacos1.webp"); border-style: solid; border-width: 1px; margin-bottom: 20px; font-size:150%}
+#info h2 {; text-align: center; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+#info p {color:white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+#menu {padding: 10px; border-style: solid; border-width: 1px; font-size:150%}
+#menu h2 {text-align: center; color: black;}
+#menu1, #menu2, #menu3 {width:33%;}
+#menu1 img, #menu2 img, #menu3 img {width:100%;}
+span {font-weight:bold;}
+#menu1 {float:left;}
+#menu2 {float:left;}
+#menu3 {float:right;}
+footer {clear:both; border-style:solid; margin-top: 20px; color:black; background-color: yellow; border-width: 1px; padding-left:10px; text-align: center;}

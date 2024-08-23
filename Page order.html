@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tica's tacos - Order</title>
+<link href="style/Page order.css" rel="stylesheet" type="text/css" />
+<script src="style/jquery-1.9.1.min.js"></script>
+<script src="style/order validation.js"></script>
+</head>
+<body>
+	<header><h1>Tica's tacos</h1>
+	</header>
+	<nav><a href="Page index.html">Home</a> <a href="Page registration.html">Register</a> <a href="Page order.html">Order</a></nav>
+	<form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+		<h2>Order Form</h2>
+		<fieldset>
+		<div class="radioinput">
+		<legend>Delivery or pick-up</legend>
+		<input id="deli" type="radio" name="DeliOrPick" value="D" onchange="showAddress1(); showSame()" />
+		<label for="deli">Delivery</label>
+		<input id="pick" type="radio" name="DeliOrPick" value="P" />
+		<label for="pick">Pick-up</label>
+		</div>
+		<div id="DeliAddress" class="textinput" style="display: none">
+			<label for="address">Delivery Address</label>
+			<input id="address" type="text" name="address">
+		</div>
+		</fieldset>
+		<fieldset>
+			<div class="textinput">
+			<label for="billadd">Billing Address</label>
+			<input id="billadd" type="text" name="billadd">
+			</div>
+			<div class="cboxinput" id="auto" style="display: none">
+				<input type="checkbox" id="same" name="same" onchange="addressFunction()" />
+				<label for="same">Same as delivery address</label>
+			</div>
+			<div class="textinput">
+			<label for="number">Contact number</label>
+			<input id="number" type="number" name="number" maxlength="10">
+			</div>
+			<div class="textinput">
+			<label for="email">Email for receipt</label>
+			<input id="email" type="text" name="email"></div>
+		</fieldset>
+		<fieldset>
+			<div class="radioinput">
+			<legend>Pay on pick-up or online</legend>
+			<input id="payonpick" type="radio" name="pay" value="Pi" />
+			<label for="payonpick">Pick-up</label>
+			<input id="payonline" type="radio" name="pay" value="On" onchange="showAddress2()" />
+			<label for="payonline">Online</label>
+			</div>
+			<div class="textinput" style="display: none" id="CreCard">
+			<label for="card">Credit card number</label>
+			<input id="card" type="number" name="card" maxlength="16">
+			</div>
+		</fieldset>
+<div class="buttoninput">
+	<input type="reset" value="Reset" />
+	<input type="submit" value="Order" /> 
+</div>
+	</form>
+	<footer><p>Tica's tacos, 37 Radford Street, Louisville, KY 40299, 502-221-5908</p></footer>
+</body>
+<script type="text/javascript">
+	function addressFunction() {
+		if (document.getElementById("same").checked) {document.getElementById("billadd").value = document.getElementById("address").value;}
+		else {document.getElementById("billadd").value = "";}	
+	}
+	function showAddress1() {
+		if ((document.getElementById("deli").checked)&&(document.getElementById("DeliAddress").style.display==="none")) {document.getElementById("DeliAddress").style.display="block";}
+		else {document.getElementById("DeliAddress").style.display="none";}
+	}
+	function showAddress2() {
+		if ((document.getElementById("payonline").checked)&&(document.getElementById("CreCard").style.display==="none")) {document.getElementById("CreCard").style.display="block";}
+		else {document.getElementById("CreCard").style.display="none";}
+	}
+	function showSame() {
+		if ((document.getElementById("deli").checked)&&(document.getElementById("auto").style.display==="none")) {document.getElementById("auto").style.display="block";}
+		else {document.getElementById("auto").style.display="none";}
+	}
+</script>
+</html>
